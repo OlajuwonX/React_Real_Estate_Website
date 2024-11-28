@@ -1,0 +1,55 @@
+.g-wrapper {
+  margin: 1.5rem;
+}
+
+.inner-container {
+  gap: 1.5rem;
+  background: linear-gradient(
+    270deg,
+    hsla(38, 91%, 63%, 0.861) 20%,
+    hsla(40, 52%, 74%, 0.911) 100%
+  );
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1.5px solid hsla(184, 87%, 70%, 0.306);
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.inner-container .primaryText {
+  color: rgb(88, 126, 254);
+  font-weight: 600;
+}
+
+.inner-container .secondaryText {
+  color: rgb(88, 126, 254);
+  font-weight: 500;
+}
+
+.inner-container .button {
+  background: linear-gradient(
+    270deg,
+    rgba(98, 175, 239, 0.879) 0,
+    rgba(25, 84, 133, 0.879) 280%
+  );
+  border: 3px solid hsla(184, 87%, 70%, 0.306);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.inner-container .button:hover {
+  background: var(--blue-gradient);
+  border: none;
+  color: hsla(29, 76%, 62%, 0.689);
+}
+
+@media (max-width: 800px) {
+  .g-wrapper {
+    margin: 1rem;
+  }
+  .inner-container {
+    padding: 0.8rem;
+  }
+  .inner-container > span {
+    font-size: 0.95rem;
+  }
+}

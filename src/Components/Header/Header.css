@@ -1,0 +1,66 @@
+.h-wrapper {
+  color: white;
+}
+
+.h-container {
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.h-menu {
+  gap: 2rem;
+}
+
+.h-menu > *:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: rgba(255, 201, 100, 0.918);
+  
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    z-index: 15; /* Ensures the icon is always above the menu */
+  }
+  .h-menu {
+    color: rgb(195, 132, 60);
+    position: absolute;
+    top: 3.2rem;
+    right: 2rem;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: flex-start; /* Align text to the left */
+    gap: 2rem; /* Spacing between menu items */
+    padding: 1.7rem 2rem;
+    font-weight: 500;
+    border-radius: 10px; /* Rounded corners */
+    background: linear-gradient(
+      90deg,
+      rgb(18, 42, 163) 0%,
+      rgb(138, 250, 220) 130%
+    );
+    box-shadow: 0px 3.5px 8px rgba(105, 86, 24, 0.927); /* Subtle shadow */
+    z-index: 10; /* Ensures the menu is on top of other elements */
+    transition: all 300ms ease-in-out; /* Smooth open/close animation */
+  }
+  .h-menu:hover {
+    transform: scale(1.05); /* Scales the menu slightly on hover */
+    transition: transform 300ms ease-in-out; /* Smooth hover animation */
+  }
+  .h-menu a {
+    text-decoration: none; /* Removes underlines from links */
+    color: inherit; /* Inherits the color from .h-menu */
+    transition: color 200ms ease-in-out; /* Smooth link color transition */
+  }
+  .h-menu a:hover {
+    color: rgb(255, 200, 100); /* Highlight menu links on hover */
+  }
+}

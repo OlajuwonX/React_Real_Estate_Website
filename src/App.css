@@ -1,0 +1,50 @@
+/* General App Styles */
+.App {
+  position: relative;
+  overflow-x: clip;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+/* Light Mode Styles */
+.light-mode {
+  background: hsl(0, 1%, 73%) 20%;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background: var(--black);
+}
+
+/* White Gradient Circle */
+.white-gradient {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 90px;
+  background: rgba(225, 225, 225, 0.427);
+  filter: blur(100px);
+}
+
+/* Toggle Button */
+.toggle-button {
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  padding: 8px 10px;
+  background: linear-gradient(
+    180deg,
+    hsl(37, 68%, 55%) 0%,
+    hsl(37, 70%, 71%) 180%
+  );
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 10px;
+  z-index: 10;
+}
+
+.toggle-button:hover {
+  background: hsla(39, 68%, 44%, 0.977);
+  transform: scale(1.1);
+}
